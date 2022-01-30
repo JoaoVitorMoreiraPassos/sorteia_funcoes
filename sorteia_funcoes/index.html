@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body id ="body">
+    <header>
+        <h1>Cadastrar Funções</h1>
+    </header>
+    
+    <div id="principal">
+        <section id="atualiza" class="hidde">
+            <div id="fechar">
+                <button>
+                    <div id="um"></div>
+                    <div id="dois"></div>
+                </button>
+            </div>
+            <div id="formulario">
+                <label for="nova_funcao">
+                    Novo nome:<input type="text" id="nova_funcao">
+                </label>
+                <label for="nova_quantidade">
+                    Nova quantidade:<input type="number" id="nova_quantidade">
+                </label>
+                </div> 
+        </section>
+        <section id="cadastro" class="active">
+            <label for="funcao">
+                Função
+                <input type="text" id="funcao">
+            </label>
+            <label for="quantidade">
+                Quantidade
+                <input type="number" id="quantidade">
+            </label>
+            <div id="buttons">
+                <button id="terminou">Terminei</button>
+                <button id="inserir">Inserir</button>
+            </div>
+        </section>
+        <div id="tabela" class="active">
+            <table id="tab">
+                <thead>
+                    <tr>
+                        <th>Função</th>
+                        <th>Quantidade</th>
+                        <th> Ação </th>
+                    </tr>
+                </thead>
+                <tbody id="linhas"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script_main.js"></script>
+</body>
+</html>
